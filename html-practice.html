@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>MY First Webpage</title>
+    </head>
+    <body>
+        <h1>Images</h1>
+        <img alt="200px * 300px image." src="https://picsum.photos/200/300">
+
+        <ul>
+            <li>
+                <a href="https://google.com">Link to Google 이동</a>
+            </li>
+            <li>
+                <a href="https://naver.com">Link to Naver</a>
+            </li>
+            <li>
+                <ul>
+                    <li>list</li>
+                    <li>list</li>
+                </ul>
+            </li>
+        </ul>
+        <ol>
+            <li>Ordered List</li>
+            <li>Ordered List</li>
+        </ol>
+
+        <h1>Tables</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>태주</td>
+                    <td>정</td>
+                    <td>taejustar@naver.com</td>
+                </tr>
+                <tr>
+                    <td>길동</td>
+                    <td>홍</td>
+                    <td>hong@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1>Registration Form</h1>
+        <form>
+            <fieldset>
+                <legend>Account</legend>
+                <label for = "name">이름</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">이메일</label>
+                <input type="text" id="email" name="email">
+                <br>
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" name="password">
+            </fieldset>
+            <fieldset>
+                <legend>User Info</legend>
+                <label for="location">주소</label>
+                <select name="location" id="location">
+                    <option value="MA">MA</option>
+                    <option value="NY">NY</option>
+                    <option value="CA">CA</option>
+                </select>
+                <br>
+                <h3>성별</h3>
+                <label for="gender1">남성</label>
+                <input type="radio" id="gender1" name="gender" value="Male">
+                <label for="gender2">여성</label>
+                <input type="radio" id="gender2" name="gender" value="Female">
+
+                <br>
+                <label for="gender11">남성</label>
+                <input type="checkbox" id="gender11" name="gender" value="Male">
+                <label for="gender22">여성</label>
+                <input type="checkbox" id="gender22" name="gender" value="Female">
+
+            </fieldset>
+            <input type="submit" value="등록">
+        </form>
+    </body>
+</html>
