@@ -1,0 +1,101 @@
+#rounded1 {
+    background:lightblue;
+    color:white;
+    width: 200px;
+    padding: 10px;
+    height: 140px;
+    border-radius: 50px;
+}
+
+#rounded2 {
+    background:orange;
+    color:white;
+    width: 200px;
+    padding: 10px;
+    height: 140px;
+    border-radius: 30px;
+}
+
+#rounded3 {
+    background:pink;
+    color:white;
+    width: 200px;
+    height: 140px;
+    padding: 10px;
+    border-radius: 70px;
+}
+
+img{
+    width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+h1{
+    color: red;
+}
+
+a:hover {
+    color: red;
+    font-weight: bold;
+}
+
+a:active {
+    color: green;
+    font-weight: bold;
+}
+
+/*myForm 의 인풋만*/
+.myForm input:focus{
+    background: pink;
+    width:300px
+}
+
+.myList li:first-child{
+    color: green;
+    font-weight:bold;
+}
+
+.myList li:last-child{
+    color: red;
+    font-weight: bold;
+}
+
+.myList li:nth-child(3n+3){
+    color: orange;
+    font-weight: bold;
+}
+
+.myList li:nth-child(even){
+    background: yellow;
+    font-weight: bold;
+}
+
+.myList li:nth-child(odd){
+    background: grey;
+    font-weight: bold;
+}
+
+
+.wrapper{
+    border: #000 1px solid;
+    width: 600px;
+    height: 400px;
+    position: relative;
+    left: 50px;
+    top: 100px;
+}
+
+.inside{
+    border: #ff0000 1px solid;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
