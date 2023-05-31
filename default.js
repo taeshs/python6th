@@ -1,18 +1,31 @@
-var i = 1;
-
-do{
-    document.write("멋쟁이사자i: "+ i++ + "<br/>");
-}while(i <= 10);
-// i<1 ?
-
-document.write("<br/>");
-
-var j = 1;
-
-while(j<= 10){
-    document.write("멋쟁이사자j: "+ j++ + "<br/>");
+for(var i = 1; i<= 100 ; i++){
+    if(i==20) break;
+    document.write(i + "<br/>");
 }
-// j<1?
+
+document.write("==========<br/>");
+
+for (var j = 1; j<=100; j++){
+    if(j==20) continue;
+    document.write(j + "<br/>");
+}
+
+
+// var i = 1;
+
+// do{
+//     document.write("멋쟁이사자i: "+ i++ + "<br/>");
+// }while(i <= 10);
+// // i<1 ?
+
+// document.write("==========<br/>");
+
+// var j = 1;
+
+// while(j<= 10){
+//     document.write("멋쟁이사자j: "+ j++ + "<br/>");
+// }
+// // j<1?
 
 
 // var digit = parseInt(prompt("숫자 입력 : "));
