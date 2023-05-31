@@ -1,17 +1,43 @@
 
-// IIFE 즉시 실행 함수
-(function display(message){
-    console.log(message);
-})("hi");
+var names = new Array(20);
 
-var display2 = function displayMessage(msg){
-    console.log(msg);
-}
-display2("i am message");
+names[0] = "지훈";
+names[1] = "은영";
 
-(function addNumbers(a, b){
-    console.log(a+b);
-})(3,4);
+console.log(names[1]);
+
+var students = ["지훈", "은영", "수진", "준호"];
+console.log("students" + students);
+console.log("2번 인덱스의 학생 : " + students[2]);
+console.log("학생 배열의 길이", students.length);
+
+students.push("정만");
+console.log("push 후 학생 배열 : " + students);
+
+students.pop();
+console.log("pop 후 학생 배열 : "+students);
+
+var numArr1 = [10, 20];
+var numArr2 = [30, 40, 50, 60];
+var numArr = numArr1.concat(numArr2);
+console.log("배열 잇기(concatenation) : "+ numArr);
+
+
+
+// // IIFE 즉시 실행 함수
+// (function display(message){
+//     console.log(message);
+// })("hi");
+
+// var display2 = function displayMessage(msg){
+//     console.log(msg);
+// }
+// display2("i am message");
+
+// (function addNumbers(a, b){
+//     console.log(a+b);
+// })(3,4);
+
 
 // // 함수
 
