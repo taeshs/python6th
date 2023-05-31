@@ -1,14 +1,17 @@
+var cels = parseFloat(prompt("섭씨 입력 : "));
+var farn = cels * ( 9 / 5 ) + 32;
 
+document.write("화씨 : "+ farn);
 
-var base = parseFloat(prompt("밑변 입력 : "));
-var height = parseFloat(prompt("높이 입력 : "))
+// var base = parseFloat(prompt("밑변 입력 : "));
+// var height = parseFloat(prompt("높이 입력 : "))
 
-var area = base * height * 0.5;
+// var area = base * height * 0.5;
 
-document.write("삼각형의 넓이 : " + area);
+// document.write("삼각형의 넓이 : " + area);
 
-var input1 = prompt("Enter first number : ");
-var num1  = parseInt(input1);
+// var input1 = prompt("Enter first number : ");
+// var num1  = parseInt(input1);
 
 // var input1 = prompt("Enter first number : ");
 // var num1  = parseInt(input1);
