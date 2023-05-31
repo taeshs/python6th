@@ -1,25 +1,36 @@
-var num1 = parseInt(prompt('첫번째 숫자 입력 : '));
-var num2 = parseInt(prompt('두번째 숫자 입력 : '));
+var letter = prompt("Enter a letter : ");
 
-if(num1 > num2) {
-    console.log("큰 수는 "+ num1);
-}
-if(num1 < num2) {
-    console.log("큰 수는 "+ num2);
-}
-if(num1 == num2) {
-    console.log("같은 수");
-}
+letter = letter.toLowerCase();
 
-if(num1 > num2){
-    console.log("큰수 num1 : " + num1);
-}
-else if(num1 < num2){
-    console.log("큰수 num2 : "+num2);
+if(letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u'){
+    console.log('Vowel');
 }
 else{
-    console.log("같은 수");
+    console.log('Constant');
 }
+
+// var num1 = parseInt(prompt('첫번째 숫자 입력 : '));
+// var num2 = parseInt(prompt('두번째 숫자 입력 : '));
+
+// if(num1 > num2) {
+//     console.log("큰 수는 "+ num1);
+// }
+// if(num1 < num2) {
+//     console.log("큰 수는 "+ num2);
+// }
+// if(num1 == num2) {
+//     console.log("같은 수");
+// }
+
+// if(num1 > num2){
+//     console.log("큰수 num1 : " + num1);
+// }
+// else if(num1 < num2){
+//     console.log("큰수 num2 : "+num2);
+// }
+// else{
+//     console.log("같은 수");
+// }
 
 // var num1 = 20;
 // var num2 = 10;
