@@ -1,30 +1,45 @@
-// 함수
 
-// 매개변수가 없는 함수
-function message(){
-    document.write("Hello, I'm a function without parameter" + "<br/>");
+// IIFE 즉시 실행 함수
+(function display(message){
+    console.log(message);
+})("hi");
+
+var display2 = function displayMessage(msg){
+    console.log(msg);
 }
+display2("i am message");
 
-// 한개의 매개변수를 갖는 함수
-function welcomeMessage(name){
-    document.write("welcome " + name + "<br/>");
-}
+(function addNumbers(a, b){
+    console.log(a+b);
+})(3,4);
 
-// 여러개의 매개변수를 갖는 함수
-function addition(num1, num2){
-    var sum = num1 + num2;
-    document.write("sum : " + sum + "<br/>");
-}
+// // 함수
 
-// 값을 반환하는 함수
-function square(num){
-    return num * num;
-}
+// // 매개변수가 없는 함수
+// function message(){
+//     document.write("Hello, I'm a function without parameter" + "<br/>");
+// }
 
-message();
-welcomeMessage("taesh");
-addition(2, 6);
-document.write("square of 5 is : " + square(5) + "<br/>") ;
+// // 한개의 매개변수를 갖는 함수
+// function welcomeMessage(name){
+//     document.write("welcome " + name + "<br/>");
+// }
+
+// // 여러개의 매개변수를 갖는 함수
+// function addition(num1, num2){
+//     var sum = num1 + num2;
+//     document.write("sum : " + sum + "<br/>");
+// }
+
+// // 값을 반환하는 함수
+// function square(num){
+//     return num * num;
+// }
+
+// message();
+// welcomeMessage("taesh");
+// addition(2, 6);
+// document.write("square of 5 is : " + square(5) + "<br/>") ;
 
 
 // for(var i = 1; i<= 100 ; i++){
