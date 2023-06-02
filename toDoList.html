@@ -45,14 +45,14 @@
 
         <button type="button"
                 class="item btn btn-danger"
-                onclick="clearNote()"
+                onclick="clearData()"
         >AllClear
         </button>
     </div>
 </main>
 <footer>
     <div style="margin:0 auto;">
-        Copyright 2023 MyNote.
+        Copyright 2023 ToDo.
     </div>
 </footer>
 
@@ -118,15 +118,15 @@
             thisDiv.remove();
             datas[i]='';
             window.localStorage.removeItem(i);
-            nums--;
-            localStorage.setItem('nums', nums);
+<!--            nums&#45;&#45;;-->
+<!--            localStorage.setItem('nums', nums);-->
         }
     }
 
     function clearData(){
         console.log("!!");
         localStorage.clear();
-        document.getElementById('note').innerHTML = '';
+        document.getElementById('Data').innerHTML = '';
         nums=0;
         datas = [];
 
