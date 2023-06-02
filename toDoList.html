@@ -117,8 +117,10 @@
         if(thisDiv !=null){
             thisDiv.remove();
             datas[i]='';
+            datas.splice(i,1);
             window.localStorage.removeItem(i);
-<!--            nums&#45;&#45;;-->
+<!--            nums = datas.length;-->
+<!--            console.log(nums);-->
 <!--            localStorage.setItem('nums', nums);-->
         }
     }
