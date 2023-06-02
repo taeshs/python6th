@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        footer{
+            width: 100vw;
+            position:fixed;
+            bottom:0;
+            text-align: center;
+        }
+
+        header{
+            text-align: center;
+        }
+
+        .container{
+            display:flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ToDo List</h1>
+</header>
+<main>
+    <div class="container mt-4">
+        <div id="Data"
+             contenteditable="true"
+             class="item border border-3 rounded-3 w-50 p-3"
+        ></div>
+            <button type="button"
+                class="item btn btn-primary"
+                onclick="saveData()"
+            >Add
+            </button>
+
+        <button type="button"
+                class="item btn btn-danger"
+                onclick="clearNote()"
+        >AllClear
+        </button>
+    </div>
+</main>
+<footer>
+    <div style="margin:0 auto;">
+        Copyright 2023 MyNote.
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+<script>
+    var datas = [];
+    var nums = 0;
+
+    function getData(){
+        nums = localStorage.getItem('nums');
+        for(var i =0;i<nums;i++){
+            datas[i] = localStorage.getItem(parseInt(i));
+
+        }
+        var exDiv = document.getElementById("parentDiv");
+        console.log(exDiv);
+        if(exDiv!=null)
+            exDiv.remove();
+
+        var parentDiv = document.createElement('div');
+        parentDiv.setAttribute('id', "parentDiv");
+        document.body.appendChild(parentDiv);
+
+        for(var i =0;i<nums;i++){
+            if(datas[i] !== null){
+                var newDiv = document.createElement('div');
+                newDiv.setAttribute('id', "todo"+parseInt(i));
+                newDiv.setAttribute('style', "margin: 0 auto");
+                newDiv.setAttribute('class', "border border-3 rounded-3 w-50 p-2");
+                newDiv.innerHTML = datas[i];
+                parentDiv.appendChild(newDiv);
+
+                var removeButton = document.createElement('button');
+                removeButton.innerText = 'X';
+                removeButton.setAttribute('style', "float:right");
+                removeButton.setAttribute('class', "btn btn-danger btn-sm");
+                removeButton.setAttribute('onclick', "removeTodo("+i+")");
+                newDiv.appendChild(removeButton);
+            }
+        }
+
+    }
+
+    function saveData(){
+        var Data = document.getElementById("Data").innerHTML;
+        if(Data !== ''){
+            datas.push(Data);
+            console.log(Data);
+            localStorage.setItem(parseInt(nums++), Data);
+            localStorage.setItem('nums', nums);
+        }
+
+        getData();
+    }
+
+    function removeTodo(i){
+        console.log("delete"+i);
+        var thisDiv = document.getElementById("todo"+i);
+        if(thisDiv !=null){
+            thisDiv.remove();
+            datas[i]='';
+            window.localStorage.removeItem(i);
+            nums--;
+            localStorage.setItem('nums', nums);
+        }
+    }
+
+    function clearData(){
+        console.log("!!");
+        localStorage.clear();
+        document.getElementById('note').innerHTML = '';
+        nums=0;
+        datas = [];
+
+        getData();
+    }
+
+    getData();
+</script>
+
+</body>
+</html>
