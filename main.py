@@ -1,8 +1,30 @@
-st1 = "Welcome to 멋쟁이 사자"
-print("to" not in st1)
+a = 5
+b = 2
+print(b, type(b))
+value = a/b
+print(value)
+print(type(value))
 
-st2 = "Welcome top 멋쟁이 사자"
-print("to" not in st2)
+x = 10
+y = 5.5
+total = x + y
+print(total)
+print(type(total))
 
-st3 = "Welcome to 멋쟁이 사자"
-print("subs" not in st3)
+j = "Hello"
+k = "like lion"
+p = j+k
+print(p)
+print(type(p))
+
+q = 20
+u = '10'
+#r = q + u
+#print(r)
+
+a = 5
+b = 2
+value = a / b
+print(value, type(value))
+int_value = int(value)
+print(int_value,type(int_value))
