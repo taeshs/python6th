@@ -1,23 +1,16 @@
-# 비교 연산자
-a = 5
-b = 2
-print('a < b: ', a < b)
-print('a <= b: ', a <= b)
+# 할당 연산자 =
+a = 10
+b = 20
+m = 15
 
-print('a == b: ', a == b)
+y = a + b
+print(y)
 
-print('a != b: ', a != b)
+m += 10 # m = m + 10
+print(m)
 
-a = 5
-b = 2
-c = 3
-d = 200
+m **= 2
+print(m)
 
-print('AND 연산자')
-print('a > b and a < c:', a > b and a < c)
-
-print("OR 연산자")
-print('a > b or a < c:', a > b or a < c)
-
-print('NOT 연산자')
-print('not(a < b): ', not(a < b))
+m //= 10
+print(m)
