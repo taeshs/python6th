@@ -1,37 +1,18 @@
-from array import *
+str1 = 'like lion'
+str2 = "like lion"
+str3 ='''
+        동해물과 백두산이
+        마르고 닿도록
+'''
+str4= """
+        하느님이 보우하사
+        우리나라 만세
+"""
 
-stu_roll = array('i', [101, 102, 103, 104, 105, 106, 107])
+str5 = 'hello "like" lion'
 
+str6 = "hello 'like' lion"
 
-print("배열 슬라이싱")
-
-n = len(stu_roll)
-for i in range(n):
-    print(i, "=", stu_roll[i])
-
-a = stu_roll[1:5]
-for i in a:
-    print(i)
-
-# 0~
-a = stu_roll[0:]
-for i in a:
-    print(i)
-
-# ~5
-a = stu_roll[:5]
-for i in a:
-    print(i)
-
-# 마지막 4개
-d = stu_roll[-4:]
-for i in d:
-    print(i)
-
-# 0~6 2개씩 건너뛰며
-e = stu_roll[0:7:2]
-for i in e:
-    print(i)
-
-# 마지막 5개중 오른쪽으로부터 2개의 요소를 출력 [-5-(-3)]
-f = stu_roll[-5:-3 ]
+str7 = "hello /n how are you?"
+str7 = "hello //n how are you?"
+str7 = r"hello /n how are you?"
