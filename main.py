@@ -23,11 +23,28 @@ while i<n:
 #     print(stu_roll[i]);
 #     i += 1;
 
-print("배열 요소 삭제 pop() 함수")
-element = stu_roll.pop()
-print('element', element)
-n = len(stu_roll)
-i = 0
+# print("배열 요소 삭제 pop() 함수")
+# element = stu_roll.pop()
+# print('element', element)
+# n = len(stu_roll)
+# i = 0
+# while i<n:
+#     print(stu_roll[i]);
+#     i += 1;
+
+print(stu_roll.index(101))  # 인덱스 넘버 반환
+
+arr = array('i',[201,208,209])
+stu_roll.extend(arr)
+n=len(stu_roll)
+i=0
 while i<n:
-    print(stu_roll[i]);
-    i += 1;
+    print((stu_roll[i]))
+    i += 1
+
+stu_roll.reverse()
+n=len(stu_roll)
+i=0
+while i<n:
+    print((stu_roll[i]))
+    i += 1
