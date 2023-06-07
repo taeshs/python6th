@@ -1,33 +1,27 @@
-# # 반복문
-# i = 0
-# while i < 10:
-#     i += 1
-#     print("i: ", i)
-# else:   # while 문 탈출 시
-#     print("else")
+# for i in range(5):
+#     print(i)
 
+# for i in range(2,7):
+#     print(i)
 
-# a = 1
-# while a <= 10:
-#     print(a)
-#     a += 1
-# print("코드종료")
+# for i in range(1, 10, 2):
+#     print(i)
 
-# a = 2
-# while a <= 20:
-#     print(a)
-#     a += 2
-# print("코드종료")
-# 
-# a = 1
-# while a <= 10:
-#     print(a)
-#     a += 1
-# else:
-#     print("While 조건이 거짓이므로 Else 부분 실행")
-# print("코드종료")
+# for i in range(-1, -10, -2):
+#     print(i)
 
-# while True:
-#     print("멋쟁이 사자")
-# print("코드 종료")
+# a = range(5)
+# print(a[0])
+# print(a[1])
+# print(a[2])
+# print(a[3])
+# print(a[4])
+# print(type(a[4]))
 
+print("Reverse range with Start, stop, step")
+r = range(5, 0, -1)
+print(r[0])
+print(r[1])
+print(r[2])
+print(r[3])
+print(r[4])
