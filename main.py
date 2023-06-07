@@ -1,18 +1,24 @@
-str1 = 'like lion'
-str2 = "like lion"
-str3 ='''
-        동해물과 백두산이
-        마르고 닿도록
-'''
-str4= """
-        하느님이 보우하사
-        우리나라 만세
-"""
+s = "       Hello World          "
 
-str5 = 'hello "like" lion'
+print(s.upper())
+print(s.lower())
+print(s.swapcase())
+print(s.title())
+print(s.isupper())
+print(s.islower())
+print(s.istitle())
+print(s.isdigit())
+print(s.isalpha())
 
-str6 = "hello 'like' lion"
+print(s.lstrip())
+print(s.rstrip())
+print(s.strip())
 
-str7 = "hello /n how are you?"
-str7 = "hello //n how are you?"
-str7 = r"hello /n how are you?"
+print(s.replace("world".title(), "there"))
+print(s.split(","))
+split_str = s.split(",")
+print(split_str)
+print(" ".join(split_str))
+
+print(s.startswith("Hello"))
+print(s.endswith("Hello"))
