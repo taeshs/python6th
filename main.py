@@ -1,29 +1,32 @@
-def show():
-    x = 10
-    print(x)
-
-show()
+i = 1
+i += 1
 
 
-def add(y):
-    x = 10
-    print(x)
-    print(x+y)
+def myfun():
+    b = i + 1
+    print("myfunction i =", b)
 
-add(20)
+
+myfun()
 
 a = 50
+
+
 def show():
-    x = 10
-    print(x) # local
-    print(a) # global
+    a = 10
+    print("show-A: ", a)
+
 
 show()
+print("A:", a)
 
-print("Gobal Variable a:", a)
-i = 0
-def myfun():
-    a = i + 1
-    print("My Function a:", a)
-myfun()
-print("Gobal Variable a:", a)
+
+def show2():
+    global a
+    print("show2-A: ", a)
+    a = 20
+    print("show2-A: ", a)
+
+
+show2()
+print("A: ", a)
