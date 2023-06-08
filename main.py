@@ -1,24 +1,17 @@
-s = "       Hello World          "
+def pw(x, y):
+    z = x ** y
+    print(z)
 
-print(s.upper())
-print(s.lower())
-print(s.swapcase())
-print(s.title())
-print(s.isupper())
-print(s.islower())
-print(s.istitle())
-print(s.isdigit())
-print(s.isalpha())
+pw(2, 5)
+pw(y=5, x=2)
 
-print(s.lstrip())
-print(s.rstrip())
-print(s.strip())
+# pw(5, 2, 3)
 
-print(s.replace("world".title(), "there"))
-print(s.split(","))
-split_str = s.split(",")
-print(split_str)
-print(" ".join(split_str))
+def show(name, age):
+    print(f"Name: {name} Age: {age}")
 
-print(s.startswith("Hello"))
-print(s.endswith("Hello"))
+show(name="멋쟁이사자", age=42)
+
+show(age=42, name="멋쟁이사자")
+
+# show(name="멋쟁이사자", age=42, roll = 100)
