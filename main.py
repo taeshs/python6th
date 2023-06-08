@@ -1,32 +1,52 @@
-i = 1
-i += 1
+# fruits = ["apple", "banana", "cherry", "orange"]
+#
+# print(fruits)
+#
+# fruits.append("grape")
+#
+# print(fruits)
+#
+# fruits.insert(2, "kiwi")
+#
+# print(fruits)
+#
+# print(fruits.pop())
+# print(fruits.pop(1))
+#
+# print(fruits)
+#
+# fruits.append("cherry")
+# print(fruits)
+#
+# print(fruits.index("cherry"))
+# print(fruits.remove("cherry"))
+# print(fruits.index("cherry"))
+# print(fruits.remove("cherry"))
+# # print(fruits.index("cherry"))
+#
+# fruits.reverse()
+#
+# print(fruits)
 
+fruits = ["apple", "banana", "cherry", "orange"]
+vegetables = ["carrot", "cucumber"]
 
-def myfun():
-    b = i + 1
-    print("myfunction i =", b)
+grocery = fruits + vegetables
+print(grocery)
 
+numbers = [10, 5, 8, 1, 7]
+numbers.sort()
 
-myfun()
+print(numbers)
 
-a = 50
+slice_numbers = numbers[1:4]
 
+print(slice_numbers)
 
-def show():
-    a = 10
-    print("show-A: ", a)
+numbers_copy = numbers.copy()
 
+print(numbers_copy)
 
-show()
-print("A:", a)
+numbers_clone = numbers[:]
 
-
-def show2():
-    global a
-    print("show2-A: ", a)
-    a = 20
-    print("show2-A: ", a)
-
-
-show2()
-print("A: ", a)
+print(numbers_clone)
