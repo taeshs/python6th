@@ -1,8 +1,28 @@
-user_input_list = []
-num_elements = int(input("Enter Numer of Element: "))
-for i in range(num_elements):
-    user_input_list.append(input("Enter Element: "))
+class Mobile:
+    fp = 'yes'
 
-print("User Input List: ")
-for elements in user_input_list:
-    print(elements)
+
+realme = Mobile()
+readme = Mobile()
+geek = Mobile()
+
+print(Mobile.fp)
+print(realme.fp)
+print(readme.fp)
+print(geek.fp)
+print('-------------')
+
+Mobile.fp = 'no'
+
+print(Mobile.fp)
+print(realme.fp)
+print(readme.fp)
+print(geek.fp)
+print('-------------')
+
+realme.fp = 'Not Working'
+
+print(Mobile.fp)
+print(realme.fp)
+print(readme.fp)
+print(geek.fp)
