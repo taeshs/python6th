@@ -1,17 +1,11 @@
 
-print('파일 열기')
-file_object = open('example.txt', 'r')
+with open('example.txt', 'r') as file_object:
+    content = file_object.read()
+    print(content)
 
-print('현재 파일 위치 확인')
-position = file_object.tell()
-print('Current Position : ', position)
-
-print('파일 포인터 위치 변경')
-file_object.seek(7)
-
-print('변경된 위치 확인')
-position = file_object.tell()
-print('New Position : ', position)
-
-print('파일 닫기')
-file_object.close()
+with open('example.txt', 'w') as file_object:
+    content = """This is a multiline string.
+Python is a versatile language.
+It is easy to learn and use."""
+    print(content)
+    file_object.write(content)
