@@ -1,18 +1,14 @@
-from datetime import timedelta
-from datetime import date
-from datetime import datetime
+# file_object = open('example.txt', 'r')
+#
+# content = file_object.read()
+# print(content)
+#
+# file_object.close()
 
-td = timedelta(days=10)
-print(td)
+file_object = open('new_example.txt', 'w')
 
-d1 = date(year=2023, month=5, day=5)
-d2 = date(year=2023, month=6, day=9)
+content = "This is a new file. \n Pyhton is fun!"
 
-print(d1 == d2)
-print(d1 > d2)
-print(d1 < d2)
+file_object.write(content)
 
-dt = datetime.today()
-
-formatted_datetime = dt.strftime('%B, %d, %Y')
-print(formatted_datetime)
+file_object.close()
