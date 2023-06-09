@@ -1,24 +1,33 @@
-import time
-from datetime import datetime
-from datetime import date
+class ParentClass:
+    def __init__(self):
+        self.name = 'parent'
+        self.number = 10
 
-print(time.time())
-print(time.ctime())
-print('-------------------')
+    def __str__(self):
+        return f'ParentClass name : {self.name}, number : {self.number}'
 
-dt = datetime(year=2023, month=5, day=5, hour=10, minute=30)
-print(dt)
-print(type(dt))
+    def add_num(self, new_number):
+        print('부모 : ', new_number, '만큼 더해야지')
+        self.number = self.number + new_number
 
-current_time = time.ctime()
-current_datetime = datetime.now()
+class ChildClass(ParentClass):
+    def __init__(self):
+        super().__init__()
+        self.name = 'child'
 
-print('-------------------')
-print(current_datetime,current_time)
+    def add_num(self, new_number):
+        print('말 안드러 자식 : ', new_number, '의 두배 만큼 더해야지')
+        self.number = self.number + 2 * new_number
 
-print('-------------------')
-d = date(year=2023, month=6, day=25)
-print(d)
 
-current_date = date.today()
-print(current_date)
+parent = ParentClass()
+child = ChildClass()
+print(parent)
+print(child)
+print('--------------')
+
+print('add 7 ')
+parent.add_num(7)
+child.add_num(7)
+print(parent)
+print(child)
