@@ -1,23 +1,23 @@
-import os
-current_directory = os.getcwd()
-print(current_directory)
 
-#os.mkdir('new_directory')
-# os.makedirs('parent_directory/child_directory/grandchild_directory')
+class Car:
+    wheels = 4
 
-# os.chdir('new_directory')
-# current_directory2 = os.getcwd()
-# print(current_directory2)
-#
-# with open('example.txt','w') as file_object:
-#     file_object.write('Hello,world')
+    def __init__(self, make, model, color):
+        self.make = make
+        self.model = model
+        self.color = color
 
-#os.rename('new_directory','old_directory')
+    #method
+    def drive(self):
+        return "The car is moving!"
 
-# os.rmdir('new_directory')
-# os.removedirs('parent_directory/child_directory/grandchild_directory')
+    def stop(self):
+        return "The car is stopped."
 
-for dirpath, dirnames, filenames in os.walk('parent_directory'):
-    print(f"디렉터리 경로: {dirpath}")
-    print(f"디렉터리 이름: {dirnames}")
-    print(f"파일 이름: {filenames}")
+
+my_car = Car("Kia", "Morning", "blue")
+
+print(my_car.make)
+
+print(my_car.drive())
+print(my_car.stop())
