@@ -1,20 +1,18 @@
+class Engine:
+    def start(self):
+        return "Engine started"
 
-class Vehicle:
-    def __init__(self, make, model, color):
-        self.make = make
-        self.model = model
-        self.color = color
+    def stop(self):
+        return "Engine stopped"
 
-    def start_engine(self):
-        return "The engine is running!"
+class Wheels:
+    def rotate(self):
+        return "Wheels are rotating"
 
-class Car(Vehicle):
-    def start_engine(self):
-        return super().start_engine() + " It's a car engine"
+class Car(Engine, Wheels):
+    pass
 
+my_car = Car()
 
-my_car = Car("Kia", "Morning", "blue")
-
-print(my_car.make)
-
-print(my_car.start_engine())
+print(my_car.start())
+print(my_car.rotate())
