@@ -1,4 +1,5 @@
 .idea
 new_example.txt
 list_example.txt
-ExCoding.py
+leetcode-problem/ExCoding.py
+leetcode-problem/ex-coding.py
