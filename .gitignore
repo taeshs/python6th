@@ -1,5 +1,10 @@
 .idea
-new_example.txt
-list_example.txt
+FileExamples/new_example.txt
+FileExamples/list_example.txt
 leetcode-problem/ExCoding.py
 leetcode-problem/ex-coding.py
+leetcode-problem/ex_coding.py
+leetcode-problem/ex_coding2.py
+leetcode-problem/ex_coding_0619.py
+tech_it.py
+daum.html
